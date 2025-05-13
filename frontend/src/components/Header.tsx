@@ -25,6 +25,11 @@ const Header: React.FC = () => {
               Carrinho
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/checkout" className={({ isActive }) => (isActive ? 'active' : '')}>
+              Checkout
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
