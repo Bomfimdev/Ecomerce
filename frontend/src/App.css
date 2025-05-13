@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
