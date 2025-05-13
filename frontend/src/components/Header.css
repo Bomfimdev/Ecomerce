@@ -32,6 +32,11 @@
   color: #007bff;
 }
 
+.header__nav a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
