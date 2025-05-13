@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../store';
-import { removeItem, updateQuantity } from '../store/features/cart/cartSlice';
+import { removeItem, updateQuantity, clearCart } from '../store/features/cart/cartSlice';
 import './Cart.css';
 
 interface CartItem {
@@ -47,8 +47,16 @@ const Cart: React.FC = () => {
               </button>
             </div>
           ))}
-          <div className="cart__total">
-            <h3>Total: R$ {total.toFixed(2)}</h3>
+          <div className="cart__actions">
+            <button
+              className="cart__clear"
+              onClick={() => dispatch(clearCart())}
+            >
+              Limpar Carrinho
+            </button>
+            <div className="cart__total">
+              <h3>Total: R$ {total.toFixed(2)}</h3>
+            </div>
           </div>
         </div>
       )}
